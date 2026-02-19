@@ -21,6 +21,15 @@
             font-style: italic;
         }
 
+        .underline {
+            text-decoration: underline;
+        }
+
+        .col {
+            display: flex;
+            flex-direction: column;
+        }
+
         .big {
             font-size: 4rem;
         }
@@ -51,6 +60,17 @@
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
+        }
+
+        .lists {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .border {
+            
+            border: 1px solid black;
         }
 
         .poster {
@@ -104,7 +124,19 @@
             <p>When: <span class="bold">Saturday, March 7th, 10AM-10PM</span></p>
             <p>Where: <span class="bold"><a href="https://maps.app.goo.gl/R4sFcDaWx3eFqUci6">The Grand Event Center</a></span></p>
         </div>
-        <span>Although the event will last for a whole twelve hours, come whenever you can! There will be live music from Northfield bands like Wintry Elementary and Her.man, multiple silent auctions of local art, and more. Proceeds will go to Sharing Our Roots and local mutual aid efforts.</span>
+        <div class="border"><div class="lists">
+            <div class="col">
+                <span class="underline">Bands</span>
+                <span>Wintry Elementary</span>
+                <span>her.man</span>
+            </div>
+            <div class="col">
+                <span class="underline">Events</span>
+                <span>Silent auctions</span>
+            </div>
+        </div>
+        <span class="i">Many more bands and activities, plus the event timeline, to be added soon!</span></div>
+        <br><span class="bold">*Recommended $10-20 donation at the door*</span>
     </div></div>
     <div class="desktop row"><div class="poster"></div><div class="poster"></div><div class="poster"></div></div>
     <div class="mobile"><div class="poster"></div>
