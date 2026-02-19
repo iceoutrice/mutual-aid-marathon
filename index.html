@@ -1,10 +1,113 @@
 <!doctype html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
+        body, window {
+            margin: 0;
+            padding: 0;
+
+            overflow-x: hidden;
+        }
+        p, span, div, h1, h2, h3, h4 {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1.5rem;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .i {
+            font-style: italic;
+        }
+
+        .big {
+            font-size: 4rem;
+        }
+
+        .styled {
+            text-shadow: 2px 2px 0px darkred;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+
+            
+            margin-top: 20vh;
+            margin-bottom: 10vh;
+            width: 100%;
+            /*background-image: linear-gradient(to bottom, black, white);*/
+        }
+        .info-body {
+            margin-left: 15vw;
+            margin-right: 15vw;
+        }
+        
+        .when-where {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .poster {
+            background-image: url("media/poster.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            width: 33.33%;
+            aspect-ratio: 1126 / 2000;
+        }
+
+        .desktop { display: flex; }
+        .mobile { display: none; }
+        .row { display: flex; flex-direction: row; }
+
+        @media (max-width: 560px) {
+            p, span, div, h1, h2, h3, h4 {
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 1rem;
+            }
+
+            .info {
+                margin-top: 10vh;
+            }
+
+            .big {
+                font-size: 4rem;
+            }
+
+            .poster {
+                background-image: url("media/poster.jpeg");
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                width: 100%;
+                aspect-ratio: 1126 / 2000;
+            }
+
+            .desktop { display: none; }
+            .mobile { display: flex; }
+
+
+        }
 	</style>
 </head>
 <body>
-	<p>Meep</p>
+	<div class="info">
+        <span class="big bold styled">Music & Arts 12 Hour Marathon</span>
+        <div class="info-body"><span class="i">Support your neighbors affected by ICE!</span>
+        <div class="when-where">
+            <p>When: <span class="bold">Saturday, March 7th, 10AM-10PM</span></p>
+            <p>Where: <span class="bold"><a href="https://maps.app.goo.gl/R4sFcDaWx3eFqUci6">The Grand Event Center</a></span></p>
+        </div>
+        <span>Although the event will last for a whole twelve hours, come whenever you can! There will be live music from Northfield bands like Wintry Elementary and Her.man, multiple silent auctions of local art, and more. Proceeds will go to Sharing Our Roots and local mutual aid efforts.</span>
+    </div></div>
+    <div class="desktop row"><div class="poster"></div><div class="poster"></div><div class="poster"></div></div>
+    <div class="mobile"><div class="poster"></div>
 </body>
 
 
