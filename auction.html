@@ -1,0 +1,205 @@
+<!-- If ur a fed FUCK OFF -->
+
+
+<!doctype html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+        body, window {
+            margin: 0;
+            padding: 0;
+
+            overflow-x: hidden;
+            background-color: #EEE9C8;
+        }
+        p, span, div, h1, h2, h3, h4 {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1.5rem;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .link {
+            text-decoration: underline;
+            color: black;
+
+        }
+
+        .link:hover {
+            color: white
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .i {
+            font-style: italic;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+
+        .col {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .big {
+            font-size: 4rem;
+        }
+
+        .styled {
+            text-shadow: 2px 2px 0px rgb(109, 85, 71);
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+
+            
+            margin-top: 10vh;
+            margin-bottom: 10vh;
+            width: 100%;
+            /*background-image: linear-gradient(to bottom, black, white);*/
+        }
+        .info-body {
+            margin-left: 15vw;
+            margin-right: 15vw;
+        }
+        
+        .when-where {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .lists {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .border {
+            
+            border: 1px solid black;
+        }
+
+        .poster {
+            background-image: url("media/poster.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            width: 33.33%;
+            aspect-ratio: 1126 / 2000;
+        }
+
+        .desktop { display: flex; }
+        .mobile { display: none; }
+        .row { display: flex; flex-direction: row; }
+
+        @media (max-width: 560px) {
+            p, span, div, h1, h2, h3, h4 {
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 1rem;
+            }
+
+            .info {
+                margin-top: 10vh;
+            }
+
+            .big {
+                font-size: 4rem;
+            }
+
+            .poster {
+                background-image: url("media/poster.jpeg");
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                width: 100%;
+                aspect-ratio: 1126 / 2000;
+            }
+
+            .desktop { display: none; }
+            .mobile { display: flex; }
+
+
+        }
+        
+	</style>
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="auction.css" />
+</head>
+<body>
+    
+
+	<div class="nav">
+		<div class="nav-side">
+			<a href="index.html"><div class="nav-item">
+				Home
+			</div></a>
+		</div>
+		<div class="nav-side">
+            <a href="auction.html"><div class="nav-item">
+                Auction
+            </div></a>
+		</div>
+	</div>
+
+	<div id="darken"></div>
+	<div class="nav-mobile">
+		<a href="index.html"><div class="home">
+			Home
+		</div></a>
+
+		<img id="hamburger" src="media/hamburger.png" />
+		<img id="x-icon" src="media/x-symbol.svg" />
+	</div>
+	<div id="sidebar"><div class="flex-col">
+                <a href="auction.html"><div class="side-item">
+                    Auction
+                </div></a>
+	</div></div>
+<script src="navbar.js"></script>
+	
+
+
+
+
+    <!-- CONTENT -->
+    <div id="auction-container">
+        <div class="auction-section-title">Morning (??? AM)</div>
+        <div class="auction-section">
+            <div class="auction-item">
+                <img src="media/auction/IMG_4274.png" width="200px">
+                <div class="auction-title">Pow! Yeehaw!</div>
+                <div class="auction-artist">Kiran Tator</div>
+                <div class="auction-desc">One print starting at $30</div>
+            </div>
+            <div class="auction-item">
+                <img src="media/auction/IMG_4270.png" width="200px">
+                <div class="auction-title">Stop!!!</div>
+                <div class="auction-artist">Kiran Tator</div>
+                <div class="auction-desc">Two prints starting at $40</div>
+            </div>
+            <div class="auction-item">
+                <img src="media/auction/IMG_4276.png" width="200px">
+                <div class="auction-title">Gertrude</div>
+                <div class="auction-artist">Kiran Tator</div>
+                <div class="auction-desc">Sculpture starting at $90</div>
+            </div>
+        </div>
+</body>
+
+
+
+
+
+</html>

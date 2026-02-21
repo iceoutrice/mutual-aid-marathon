@@ -1,0 +1,136 @@
+#auction-container {
+	display: flex;
+	flex-direction: column;
+
+	margin: 5vh 10vw;
+}
+
+.auction-section-title {
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 2rem;
+
+	border: 2px solid black;
+}
+
+.auction-section {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+	gap: 1rem;
+	margin-bottom: 10vh;
+}
+
+
+
+.auction-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	max-width: 250px;
+}
+
+.auction-title {
+	margin-top: 2vh;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.auction-artist {
+    font-size: 1.6rem;
+    font-style: italic;
+}
+
+.auction-tags {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 5px;
+	margin: 1px;
+}
+
+.auction-tag {
+	border: 1px solid darkgreen;
+	border-radius: 10px;
+	color: darkgreen;
+	font-size: 11px;
+
+	padding: 3px;
+	margin: 2px 2px;
+}
+
+img {
+	box-shadow: 0px 0px 5px black;
+
+}
+
+.auction-desc {
+	font-size: 14px;
+	text-align: center;
+	max-width: 25vw;
+}
+
+
+@media (max-width: 560px) {
+	.auction-section {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		margin-bottom: 10vh;
+	}
+
+	a {
+		justify-items: center;
+	}
+
+
+
+	.auction-item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		max-width: 80vw;
+	}
+
+	.auction-title {
+		margin-top: 2vh;
+		font-size: 24px;
+		text-align: center;
+	}
+
+	.auction-tags {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 5px;
+		margin: 1px;
+	}
+
+	.auction-tag {
+		border: 1px solid darkgreen;
+		border-radius: 10px;
+		color: darkgreen;
+		font-size: 11px;
+
+		padding: 3px;
+		margin: 2px 2px;
+	}
+
+	img {
+		box-shadow: 0px 0px 5px black;
+
+	}
+
+
+
+	.auction-desc {
+		font-size: 14px;
+		text-align: center;
+		max-width: 80vw;
+		margin-bottom: 15vh;
+	}
+
+
+}

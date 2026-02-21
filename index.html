@@ -17,6 +17,20 @@
             font-size: 1.5rem;
         }
 
+        a {
+            text-decoration: none;
+        }
+
+        .link {
+            text-decoration: underline;
+            color: blue;
+
+        }
+
+        .link:hover {
+            color: white
+        }
+
         .bold {
             font-weight: bold;
         }
@@ -116,29 +130,71 @@
             .desktop { display: none; }
             .mobile { display: flex; }
 
-
+            .lists {
+                flex-direction: column;
+            }
         }
+        
 	</style>
+    <link rel="stylesheet" href="navbar.css" />
 </head>
 <body>
+    
+
+	<div class="nav">
+		<div class="nav-side">
+			<a href="index.html"><div class="nav-item">
+				Home
+			</div></a>
+		</div>
+		<div class="nav-side">
+            <a href="auction.html"><div class="nav-item">
+                Auction
+            </div></a>
+		</div>
+	</div>
+
+	<div id="darken"></div>
+	<div class="nav-mobile">
+		<a href="index.html"><div class="home">
+			Home
+		</div></a>
+
+		<img id="hamburger" src="media/hamburger.png" />
+		<img id="x-icon" src="media/x-symbol.svg" />
+	</div>
+	<div id="sidebar"><div class="flex-col">
+                <a href="auction.html"><div class="side-item">
+                    Auction
+                </div></a>
+	</div></div>
+
+
+
+<script src="navbar.js">
+
+
+
+</script>
 	<div class="info">
         <span class="big bold styled">Music & Arts 12 Hour Marathon</span>
         <div class="info-body"><span class="i">Support your neighbors affected by ICE!</span>
         <div class="when-where">
             <p>When: <span class="bold">Saturday, March 7th, 10AM-10PM</span></p>
-            <p>Where: <span class="bold"><a href="https://maps.app.goo.gl/R4sFcDaWx3eFqUci6">The Grand Event Center</a></span></p>
+            <p>Where: <span class="bold"><a class="link" href="https://maps.app.goo.gl/R4sFcDaWx3eFqUci6">The Grand Event Center</a></span></p>
         </div>
         <div class="border"><div class="lists">
             <div class="col">
-                <span class="underline">Bands</span>
+                <span class="border bold">Bands</span>
                 <span>Wintry Elementary</span>
                 <span>her.man</span>
             </div>
             <div class="col">
-                <span class="underline">Events</span>
-                <span>Silent auctions</span>
+                <span class="border bold">Events</span>
+                <a class="link" href="auction.html"><span>Silent auction</span></a>
             </div>
         </div>
+        <br>
         <span class="i">Many more bands and activities, plus the event timeline, to be added soon!</span></div>
         <br><span class="bold">*Recommended $10-20 donation at the door*</span>
     </div></div>
