@@ -103,6 +103,19 @@
         .desktop { display: flex; }
         .mobile { display: none; }
         .row { display: flex; flex-direction: row; }
+        .responsive-row { display: flex; flex-direction: row;}
+
+        .poster1, .poster2, .poster3, .poster4 {
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            width: 100%;
+            aspect-ratio: 1638 / 2048;
+        }
+        .poster1 { background-image: url("media/poster1.jpg"); }
+        .poster2 { background-image: url("media/poster2.jpg"); }
+        .poster3 { background-image: url("media/poster3.jpg"); }
+        .poster4 { background-image: url("media/poster4.jpg"); }
 
         @media (max-width: 560px) {
             p, span, div, h1, h2, h3, h4 {
@@ -133,6 +146,8 @@
             .lists {
                 flex-direction: column;
             }
+
+            .responsive-row { flex-direction: column;}
         }
         
 	</style>
@@ -140,8 +155,7 @@
 </head>
 <body>
     
-
-	<div class="nav">
+    <div class="nav">
 		<div class="nav-side">
 			<a href="index.html"><div class="nav-item">
 				Home
@@ -174,53 +188,17 @@
                     Auction
                 </div></a>
 	</div></div>
+<script src="navbar.js"></script>
 
 
 
-<script src="navbar.js">
 
+<div class="responsive-row">
+    <div class="poster1"></div>
+    <div class="poster2"></div>
+    <div class="poster3"></div>
+    <div class="poster4"></div>
+</div>
 
-
-</script>
-	<div class="info">
-        <span class="big bold styled">Music & Arts 12 Hour Marathon</span>
-        <div class="info-body"><span class="i">Support your neighbors affected by ICE!</span>
-        <div class="when-where">
-            <p>When: <span class="bold">Saturday, March 7th, 10AM-10PM</span></p>
-            <p>Where: <span class="bold"><a class="link" href="https://maps.app.goo.gl/R4sFcDaWx3eFqUci6">The Grand Event Center</a></span></p>
-        </div>
-        <div class="border"><div class="lists">
-            <div class="col">
-                <span class="border bold">Bands</span>
-                <span>Psycho Jungle Cat</span>
-                <span>Wintry Elementary</span>
-                <span>her.man</span>
-                <span>St. Olaf Cabaret</span>
-                <span>Rolled Oats</span>
-                <span>Singing Resistance</span>
-                <span>String Sound Bath</span>
-                <span>AKGA</span>
-                <span>Son De Lagos</span>
-                <span>Feeling Groovy</span>
-                <span>And independent musicians!</span>
-            </div>
-            <div class="col">
-                <span class="border bold">Events</span>
-                <a class="link" href="auction.html"><span>Silent Auction</span></a>
-                <span>Political Education</span>
-                <span>Poetry Reading</span>
-                <span class="i">And more...</span>
-            </div>
-        </div>
-        <br>
-        <span class="bold">*Recommended $10-20 donation at the door*</span><br>
-    </div></div>
-    <div class="desktop row"><div class="poster"></div><div class="poster"></div><div class="poster"></div></div>
-    <div class="mobile"><div class="poster"></div>
 </body>
-
-
-
-
-
 </html>
